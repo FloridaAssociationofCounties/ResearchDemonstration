@@ -284,6 +284,10 @@ p { color: #ffffff;  }
   animation-duration: 1s;
 }
 
+iframe {
+  margin: 3%;
+}
+
 html>body .fade-in {
   height: auto;
 }
