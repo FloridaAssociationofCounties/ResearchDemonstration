@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>FAC Research</title>
+	<link rel="stylesheet" type="text/css" href="Finance & Tax.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+  </head>
+  <body>
+  	<div class="fade-in">
+      <header>
+	    <div class="FACfindheading">
+      	  <img src="Art/FAC logo transparent.png">
+      	  <a>FAC Research</a>
+      	  <h2 id="clock"></h2>
+	    </div>
+	  </header>
+      	<script>
+      	  var update_loop = setInterval(Main, 1000);
+          Main();
+      	  function Main() {
+      		var time = new Date();
+      		var day = time.getDay();
+      		var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    		var month = time.getMonth();
+    		var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      		var day_of_month = time.getDate();
+      		var year = time.getFullYear();
+      		var hour = time.getHours();
+      		var hours = ((hour + 11) % 12 + 1);
+            var minute = time.getMinutes();
+            var minutes = (minute < 10 ? '0' : '') + minute;
+            var second = time.getSeconds();
+            var seconds = (second < 10 ? '0' : '') + second;
+            var suffix = hour < 12 ? 'AM' : 'PM';
+            document.getElementById("clock").innerHTML = days[day] + '<br />' + months[month] + ' ' + day_of_month + ', ' + year + '<br />' + hours + ':' + minutes + ':' + seconds + ' ' + suffix;
+          }
+        </script>
+	  <nav>
+	    <ul>
+	      <li><a href="index.html">Home</a></li>
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="Florida Counties.html">Florida's Counties</a></li>
+	      <li class="dropdown">
+	      	<a href="javascript:void(0)" class="dropbtn">Issue Areas</a>
+	      	<div class="dropdown-content">
+	      	  <a href="Finance & Tax.html">Finance & Tax</a>
+	      	  <a href="Administration.html">Administration</a>
+	      	  <a href="Economic Development.html">Economic Development</a>
+	      	  <a href="Accountability & Transparency.html">Accountability & Transparency</a>
+	      	  <a href="Intergovernmental Relations.html">Intergovernmental Relations</a>
+	      	  <a href="Growth Management.html">Growth Management</a>
+	      	  <a href="Transportation.html">Transportation</a>
+	      	  <a href="Environment.html">Environment</a>
+	      	  <a href="Health & Human Services.html">Health & Human Services</a>
+	      	  <a href="Public Safety.html">Public Safety</a>
+	      	  <a href="Emergency Services.html">Emergency Services</a>
+	      	  <a href="Criminal Justice.html">Criminal Justice</a>
+	      	  <a href="Federal Issues.html">Federal Issues</a>
+			</div>
+		  </li>	  
+		  <li><a href="latest.html">Latest</a></li>
+	    </ul>
+	  </nav>
+	    <main>
+		<br />
+		<div class="wrapper">
+      <div class="col_third">
+        <div id="hoverpanel1">
+          <div class="front">
+            <div class="box1">
+              <p>Property Taxes</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="box2">
+              <p><a href="Finance & Tax/Property Taxes/2017 FAC Property Tax Data Summary.xlsx" download>Click to Download the Excel [xlsx] spreadsheet</a></p>
+            </div>
+          </div>
+        </div>
+		</div>
+
+		<div class="col_third">
+        <div id="hoverpanel2">
+          <div class="front">
+            <div class="box1">
+              <p>Homestead Exemption</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="box2">
+              <p><a href="Finance & Tax/Property Taxes/Increase to Additional Homestead Exemption - 2017 data.xlsx" download>Click to Download the Excel [xlsx] spreadsheet</a></p>
+            </div>
+          </div>
+        </div>
+		</div>
+
+		<div class="col_third end">
+        <div id="hoverpanel3">
+          <div class="front">
+            <div class="box1">
+              <p>Tourist Development Taxes</p>
+            </div>
+          </div>
+          <div class="back">
+            <div class="box2">
+              <p><a href="Finance & Tax/FAC Tourist Development Taxes.xlsx" download>Click to Download the Excel [xlsx] spreadsheet</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+	 </div>
+   <script>
+    $("#hoverpanel1").flip({
+      axis: 'y',
+      trigger: 'hover'
+    });
+    $("#hoverpanel2").flip({
+      axis: 'x',
+      trigger: 'hover'
+    });
+    $("#hoverpanel3").flip({
+      axis: 'y',
+      trigger: 'hover',
+	  reverse: true
+    });
+   </script>
+	  <iframe src="https://www.google.com/maps/d/embed?mid=1f2-YeFYB4jeBYGMF68sbcM9NL7tQUvOp" width="640" height="480"></iframe></br>
+	  <iframe id="datawrapper-chart-i2fu1" src="//datawrapper.dwcdn.net/i2fu1/1/" scrolling="no" frameborder="0" allowtransparency="true" width="600"; height="800"></iframe>
+	  <script type="text/javascript">
+	    if("undefined"==typeof window.datawrapper)window.datawrapper={};
+	    window.datawrapper["i2fu1"]={},
+	    window.datawrapper["i2fu1"].embedDeltas={
+	      "100":481,
+	      "200":427,
+	      "300":427,
+	      "400":400,
+	      "500":400,
+	      "700":400,
+	      "800":400,
+	      "900":400,
+	      "1000":400},
+	    window.datawrapper["i2fu1"].iframe=document.getElementById("datawrapper-chart-i2fu1"),
+	    window.datawrapper["i2fu1"].iframe.style.height=window.datawrapper["i2fu1"].embedDeltas[Math.min(1e3,Math.max(100*Math.floor(window.datawrapper["i2fu1"].iframe.offsetWidth/100),100))]+"px",
+	    window.addEventListener("message",function(a){if("undefined"!=typeof a.data["datawrapper-height"])
+	    for(var b in a.data["datawrapper-height"])
+	      if("i2fu1"==b)window.datawrapper["i2fu1"].iframe.style.height=a.data["datawrapper-height"][b]+"px"});
+	  </script>
+        </main>
+    </div>
+  </body>
+</html>
